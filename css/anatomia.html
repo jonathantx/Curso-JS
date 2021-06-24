@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .seletor {
+            color: #fff; /* valor em hexadecimal */
+            font-size: 30px; /* valor númerico associado a uma unidade */
+            text-align: center;  /* valores pré-definidos */
+            /* multiplos valores */
+            border: solid 5px navy;  /* shorthand property, forma mais curta para aplicar
+                                       até ou mais três propriedades no caso acima da borda*/
+           font-family: Helvetica, sans-serif; /* usando fontes, caso nao encontre a primeira
+                                                 Irá usar a segunda encontrada */
+           /* funções */
+           width: calc(100% - 40px); /* funçoes pré-definidas, no caso calc */
+           background-color: rgb(34, 153, 189); /* cor do fundo */
+      
+        }
+
+        /* Usando uma pseudo-classe (Será aplicada quando o mouse do usuário passar por cima do componente*/
+        .seletor:hover {
+            background-color: orangered;
+        }
+
+        /*Usando um pseudo-elemento */
+        .seletor::first-letter {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /* padrão de nomenclatura? */
+        /* dash-case ou camelCase? */
+        
+    </style>
+</head>
+
+<body>
+    <div class="seletor">Conteúdo</div>
+</body>
+
+</html>

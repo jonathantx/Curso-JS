@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Box Model</title>
+    <style>
+        /* padding: um espaço entre o conteudo e a margem vem o padding */
+        body { font-size: 80px; margin: 0; }
+        .c1 { background-color: orange; }
+        .c2 { background-color: skyblue; }
+        .c3 { background-color: tomato;}
+
+        div { 
+            float: left;
+            padding-top: 100px; /* aplica apenas para cima */
+            padding: 10px 50px 100px 150px; /* aplica os px determinado em cada lado (sempre no sentido horário) */
+            padding: 100px 50px; /* aplica 100px em cima e baixo e 50px nas laterais */
+            padding: 50px; /* aplica 100px em todos os 4 lados */
+            margin: 0px 20px; /*segue o mesmo conceito acima, mas no caso de margem. */
+            border: solid 15px black
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c1">1</div>
+    <div class="c2">2</div>
+    <div class="c3">3</div>
+</body>
+
+</html>

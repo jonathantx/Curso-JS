@@ -1,0 +1,61 @@
+<table border="1">
+    <caption>Produtos</caption>
+    <!-- A etiqueta <tr> que significa table row é usada para definir uma linha. 
+    A etiqueta <td> que significa table data é usada para definir uma célula 
+    As tabelas podem ter cabeçalhos. Para isso usa-se a etiqueta <th> que significa table header-->
+    <thead>
+        <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+        <tr>
+            <td>iPad</td>
+            <td>3289,00</td>
+            <td>5</td>
+            <td>16445,00</td>
+        </tr>
+        <tr>
+            <td>Samsung S9</td>
+            <td>2649,00</td>
+            <td>8</td>
+            <td>21192,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+        <!-- colspan para acoluna ocupar três espaços (colunas)
+            rowspan para ocupar duas (linhas) --> 
+            <td colspan="3">Total</td>
+            <td>37637,00</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- Para usar estilo na page  -->
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+/* hover para quando o mouse estiver em cima, selecionar alguma cor*/
+    tbody tr:hover {
+        background-color: #dedede;
+    }
+    
+    tfoot {
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
